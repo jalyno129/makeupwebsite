@@ -1,0 +1,111 @@
+/*The following tags work to create the same baseand css across all pages on common used tags*/
+
+html,body{height:100%;/*to set height of page*/
+        margin:0}
+body{display:flex;
+    flex-direction:column;/*Used AI to fix the white gap happening at the bottom of page under footer orgiinally.*/
+    font-family:sans-serif;}
+
+main{flex:1;
+    overflow:auto;
+    background:#FFFFFF}
+/*Style for header and nav bar*/
+.logo img {
+  max-height: 44px;
+  height: auto;
+  width: auto;
+  display: block;
+  line-height: 0;
+}
+
+nav {
+  background-color: #FDB3C2;     
+  display: flex;                 
+  align-items: center;           
+  justify-content: space-between;
+  padding: 4px 16px;
+  height: 56px; /* tweak 50–65px if you want thinner/thicker */
+  box-sizing: border-box;                
+  overflow: hidden;              
+}
+/* The navigation links list */
+.nav-links {
+  list-style: none; 
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0 20px 0 0;
+  align-items: center;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: #ffb3c6; 
+}
+
+
+footer {
+  background-color: #FDB3C2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+}
+
+footer img.logo {
+  height: 40px; /* adjust to your liking */
+  width: auto;
+}
+/*stylize the newsleter button*/
+footer button {
+  background-color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+/*Class and Ids used thoughout website*/
+
+/*Homepage class/ids*/
+#banner{width:600px;
+        height:300px}
+        .samesize{width:150px;
+        height:150px}
+
+/*classes for layout of trending products*/
+.column{flex:1;}
+.row {display:flex;
+        justify-content:space-between;
+        gap:20px;}
+.samesize{width:100%;
+        height:300px;
+        object-fit:cover;}
+/*Makeup Inspiration class/ids*/
+main {
+  padding: 20px;
+  box-sizing: border-box;
+}
+section {
+  display: flex;
+  align-items: stretch;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+section img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+section div {
+  flex: 1;
+}
+section:nth-child(even) {
+  flex-direction: row-reverse;
+}
